@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "lato";
+  font-weight: 400;
+  color: black;
+}
+
+/*header*/
+@media screen and (min-width: 1024px) {
+  header {
+    padding: 0 30px;
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  header img {
+    width: 54px;
+  }
+  header button {
+    margin-left: 322px;
+    background-color: white;
+    border-radius: 10px;
+    width: 163px;
+    height: 45px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  ul {
+    padding-left: 431px;
+  }
+  ul li {
+    padding-left: 68px;
+    display: inline;
+  }
+  ul li:first-child {
+    padding: 0;
+  }
+  ul li a {
+    font-family: "smooch-sans";
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    padding: 0 20px;
+    background-color: black;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  header button {
+    display: none;
+  }
+  .menu-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 25px;
+  }
+  .menu {
+    position: fixed;
+    left: -100vw;
+    top: 80px;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.85);
+    width: 100vw;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .menu.active {
+    left: 0;
+  }
+  .menu-item {
+    margin: 1rem 0;
+  }
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(9px) rotate(45deg);
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 7px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+  }
+}
+@media screen and (min-width: 1024px) {
+  footer {
+    margin-top: 276px;
+    height: 60px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h5 {
+    font-size: 16px;
+    line-height: 19.2px;
+    font-family: "Smooch Sans";
+    font-weight: 500;
+  }
+}
+@media screen and (max-width: 768px) {
+  footer {
+    margin-top: 121px;
+    height: 60px;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  footer h5 {
+    font-size: 16px;
+    line-height: 19.2px;
+    font-family: "Smooch Sans";
+    font-weight: 500;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    padding-top: 159px;
+    margin: 0 auto;
+    display: flex;
+    width: 1151px;
+  }
+  .title-description {
+    width: 500px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 404px;
+  }
+  .first-image img {
+    width: 568px;
+    padding-left: 83px;
+    height: 404px;
+  }
+  .title-description p {
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    width: 500px;
+    padding-top: 20px;
+    line-height: 19.2px;
+  }
+  .title-description h2 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  .tiles {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 420px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-left: 126px;
+    padding: 30px;
+  }
+  .tiles:first-child {
+    margin-left: 0;
+  }
+  .tiles h2 {
+    padding-bottom: 20px;
+    font-family: "smooch Sans";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.2px;
+  }
+  .tiles p {
+    width: 240px;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-family: "lato";
+    font-weight: 400;
+    text-align: center;
+  }
+  .tiles button {
+    margin-top: 20px;
+    width: 163px;
+    background-color: #000000;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Smooch Sans";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hidden-desktop {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+  .title-description {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .first-image img {
+    display: none;
+  }
+  .title-description p {
+    padding: 0 20px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+    width: 100%;
+    padding-top: 20px;
+    line-height: 19.2px;
+    margin-bottom: 76px;
+  }
+  .title-description h2 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .tiles {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 420px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 30px;
+  }
+  .tiles:first-child {
+    margin-top: 0px;
+  }
+  .tiles h2 {
+    padding-bottom: 20px;
+    font-family: "smooch Sans";
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 43.2px;
+  }
+  .tiles p {
+    width: 240px;
+    font-size: 16px;
+    line-height: 19.2px;
+    font-family: "lato";
+    font-weight: 400;
+    text-align: center;
+  }
+  .tiles button {
+    margin-top: 20px;
+    width: 163px;
+    background-color: #000000;
+    height: 45px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Smooch Sans";
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .hidden-desktop img{ 
+    padding: 20px;
+    display: block;
+    width: 388px;
+    height: 272px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

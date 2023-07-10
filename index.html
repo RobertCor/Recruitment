@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />    
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="image/Logo.png">
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Link</a></li>
+            <li class="menu-item"><a href="#">Link</a></li>
+            <li class="menu-item"><a href="#">Link</a></li>
+            <li class="menu-item"> <a href="#">Link</a></li>
+            <li class="menu-item"><a href="#">Link</a></li>
+        </ul>
+        <div class="hamburger" id="nav-toggle">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div> 
+        <script>const hamburger = document.querySelector(".hamburger");
+            const navMenu = document.querySelector(".menu");
+            const navLink = document.querySelectorAll(".menu-item");
+            
+            hamburger.addEventListener("click", mobileMenu);
+            navLink.forEach(n => n.addEventListener("click", closeMenu));
+            
+            function mobileMenu() {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            }
+            
+            function closeMenu() {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }</script>        
+        <button>
+            Button
+        </button>
+    </header>
+    <main>
+        <div class="container">
+            <div class="first-image hidden-desktop"><img src="image/first-image.png"></div>
+            <div class="title-description">
+                <h2>Lorem ipsum dolor sit amet!</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            </div>
+            <div class="first-image"><img src="image/first-image.png"></div>
+        </div>
+        <div class="container">
+            <div class="tiles">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <button>Button</button>
+            </div>
+            <div class="tiles">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <button>Button</button>
+            </div>
+            <div class="tiles">
+                <h2>Lorem ipsum</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <button>Button</button>
+            </div>
+        </div>
+
+    </main>
+    <footer><h5>Lorem ipsum</h5></footer>
+</body>
+</html>
